@@ -1,6 +1,7 @@
 * {
     font-family: sans-serif, Arial;
     font-weight: normal;
+    box-sizing: border-box;
 }
 body {
     margin: 0;
@@ -102,10 +103,11 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #333333;
+    display: flex;
 }
 .dignity-item:before {
     content: url(img/plus\ icon.svg);
-    padding-right: 5px;
+    padding-right: 10px;
 }
 
 .wrap-screenshots {
@@ -214,8 +216,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
 }
-
 .buy-title {
     text-align: center;
     margin-top: 0;
@@ -242,10 +244,10 @@ body {
 .card-price {
     background-color: #FFFFFF;
     font-size: 40px;
-line-height: 30px;
-color: #445162;
-padding: 15px 103px;
-border: 1px solid #445162;
+    line-height: 30px;
+    color: #445162;
+    padding: 15px 103px;
+    border: 1px solid #445162;
 }
 .card-text {
     padding-top: 15px;
@@ -253,19 +255,19 @@ border: 1px solid #445162;
 .card-list  {
     padding-bottom: 10px;
     font-size: 14px;
-line-height: 24px;
-color: #FFFFFF;
+    line-height: 24px;
+    color: #FFFFFF;
 }
 .card-button {
     font-size: 18px;
-line-height: 18px;
-color: #445161;
-padding: 12px 110px;
-background: #FFFFFF;
-margin-bottom: 12px;
-text-decoration: none;
-border-radius: 10px;
-font-weight: bold;
+    line-height: 18px;
+    color: #445161;
+    padding: 12px 110px;
+    background: #FFFFFF;
+    margin-bottom: 12px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 .contacts {
@@ -309,26 +311,26 @@ font-weight: bold;
 }
 .contacts-form-input, .contacts-form-textarea {
     font-size: 16px;
-line-height: 24px;
-color: #445162;
-padding: 12px;
-margin-bottom: 18px;
-border-radius: 10px;
+    line-height: 24px;
+    color: #445162;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 10px;
 }
 .contacts-form-textarea {
     min-height: 170px;
 }
 .contacts-form-submit {
     text-transform: uppercase;
-color: #445162;
-align-items: center;
-font-size: 16px;
-line-height: 24px;
-padding: 8px;
-width: 35%;
-margin-left: 130px;
-border-radius: 10px;
-font-weight: bold;
+    color: #445162;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+    width: 35%;
+    margin-left: 130px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 .contacts-info-list {
     margin-top: 0;
@@ -337,22 +339,27 @@ font-weight: bold;
 }
 .contacts-info-item {
     font-size: 16px;
-line-height: 24px;
-color: #FFFFFF;
-margin-bottom: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    display: flex;
 }
 .contacts-info-icon {
     align-items: center;
+    display: flex;
+}
+.contacts-info-icon-img {
+    margin-right: 3px;
 }
 .footer {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
     font-size: 12px;
-line-height: 24px;
-color: #445162;
-letter-spacing: 0.3px;
-background-color:#F5F5F5;
+    line-height: 24px;
+    color: #445162;
+    letter-spacing: 0.3px;
+    background-color:#F5F5F5;
 }
 .contacts-info-item:nth-child(1):before {
     content: url(img/skype\ icon.svg);
